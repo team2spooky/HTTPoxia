@@ -51,7 +51,7 @@ body {
 }
 
 .layer-bg {
-  background-image: url("../images/wave-bg.jpg");
+  background-image: url("./images/wave-bg.jpg");
 }
 
 .layer-1 {
@@ -65,13 +65,11 @@ body {
 }
 
 .layer-2 {
-  /*background-image: url("../images/wave-top.png");
-  background-position: bottom;*/
+  background-image: url("./images/wave-top.png");
 }
 
 .layer-3 {
-  /*background-image: url("../images/wave-bot.png");
-  background-position: right bottom;*/
+  background-image: url("./images/wave-bot.png");
 }
 
 /*.layer-4 {
@@ -79,7 +77,7 @@ body {
 }*/
 
 .layer-4 {
-  background-image: url("../images/wave-wash.png");
+  background-image: url("./images/wave-wash.png");
   background-size: 100% 50%;
   background-position: bottom;
 }
