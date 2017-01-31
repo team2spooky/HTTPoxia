@@ -1,40 +1,89 @@
-body, html {
-	height: 100%
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Averia Libre', cursive;
+  color: #000;
 }
 
-.surface {
-	background-image: url("./images/surface2.jpg");
-	min-height: 100%;
-    background-position: center;
-    background-size: cover;
+.col {
+  width: 100%;
 }
-.splash {
-	min-width: 100%;
-	position: relative;
-	font-family: 'Averia Serif Libre', cursive;
-	font-weight: 300;
-	font-size: 8rem;
+
+#content {
+  background-color: #fff;
 }
-.center {
-	text-align: center;
-	/*position: absolute;*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%)
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
 }
-.text-padding {
-	padding: 0 8px 0 8px;
+
+.first-section {
+  padding: 50px 0 20px 0;
 }
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
 .section-title {
-	font-size: 3em;
-	font-family: 'Averia Gruesa Libre', cursive;
-	padding: 8px;
+  font-family: "Averia Gruesa Libre", cursive;
+  font-size: 48px;
+  text-align: center;
 }
+
 .section-text {
-	font-family: 'Averia Libre', cursive;
-	font-size: 2em;
+  color: #000;
+  font-size: 24px;
+  line-height: 150%;
+  padding: 0 20%;
 }
-.section-title, .section-text{
-	text-align: center;
+
+#splash, .layer {
+  min-height: 800px;
+}
+
+.layer-bg {
+  background-image: url("../images/wave-bg.jpg");
+}
+
+.layer-1 {
+  min-width: 100%;
+  font-family: 'Averia Serif Libre', cursive;
+  /*font-weight: 300;*/
+  font-size: 8rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.layer-2 {
+  /*background-image: url("../images/wave-top.png");
+  background-position: bottom;*/
+}
+
+.layer-3 {
+  /*background-image: url("../images/wave-bot.png");
+  background-position: right bottom;*/
+}
+
+/*.layer-4 {
+  background-image: url("./images/wave-bottom.png");
+}*/
+
+.layer-4 {
+  background-image: url("../images/wave-wash.png");
+  background-size: 100% 50%;
+  background-position: bottom;
+}
+
+@media only screen and (max-width: 768px) {
+  
 }
