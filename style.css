@@ -1,3 +1,5 @@
+/**{outline: 1px solid red}*/
+
 body {
   padding: 0;
   margin: 0;
@@ -6,14 +8,51 @@ body {
   color: #000;
 }
 
-.col {
-  width: 100%;
+h1 {
+  font-size: 30px;
+  margin: 0;
 }
 
 #content {
-  background-color: #fff;
+  background-color: #212121;
 }
 
+.container {
+  padding: 0 4em 0 4em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1081px) {
+  .col-2, .col-4, .col-6, .col12{
+    float: left;
+  }
+  .col-1{width:8.33333%;}
+  .col-2{width:16.66666%;}
+  .col-3,.col-quarter{width:24.99999%;}
+  .col-4,.col-third{width:33.33333%;}
+  .col-5{width:41.66666%;}
+  .col-6,.col-half{width:49.99999%;}
+  .col-7{width:58.33333%;}
+  .col-8,.col-twothird{width:66.66666%;}
+  .col-9,.col-threequarter{width:74.99999%;}
+  .col-10{width:83.33333%;}
+  .col-11{width:91.66666%;}
+  .col-12{width:99.99999%;}
+
+
+  .container {
+    padding: 0 8em 0 8em;
+  }
+}
 .layer {
   background-position: bottom center;
   background-size: auto;
@@ -24,8 +63,13 @@ body {
   z-index: -1;
 }
 
+.section {
+  color: #fff;
+}
+
 .first-section {
-  padding: 50px 0 20px 0;
+  padding: 12px 0 0 0;
+  margin-top: 0;
 }
 
 .text-header {
@@ -37,14 +81,65 @@ body {
   font-family: "Averia Gruesa Libre", cursive;
   font-size: 48px;
   text-align: center;
+  margin: 16px 0;
 }
 
-.section-text {
-  color: #000;
-  font-size: 24px;
+.section-text, .member-container {
+  font-size: 1.6em;
   line-height: 150%;
-  padding: 0 20%;
 }
+.member-container {
+  margin-bottom: 16px;
+}
+.member-container::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.headshot {
+  width: 30%;
+  float: left;
+}
+
+.headshot img {
+  width: 100%;
+}
+
+.member-bio {
+  width: 65%;
+  float: left;
+  padding: 0 0 0 16px;
+  font-size: .8em;
+}
+
+.social-media-icons {
+  margin: auto;
+  text-align: center;
+ 
+}
+
+.social-media-icons img{
+  width: 50px;
+  margin: 0 4px 0 4px;
+  transition: filter .3s;
+  filter: drop-shadow(0 6px 0 black) brightness(100%);
+}
+
+.social-media-icons img:hover{
+  filter: drop-shadow(0 0px 0 black) brightness(30%);
+}
+
+
+/*
+ *********************
+ *                   *
+ * Parallax CSS Code *
+ *                   *
+ *********************
+ */
+
 
 #splash, .layer {
   min-height: 800px;
@@ -57,7 +152,6 @@ body {
 .layer-1 {
   min-width: 100%;
   font-family: 'Averia Serif Libre', cursive;
-  /*font-weight: 300;*/
   font-size: 8rem;
   color: #fff;
   text-align: center;
@@ -66,22 +160,18 @@ body {
 
 .layer-2 {
   background-image: url("./images/wave-top.png");
+  background-size: 100% 40%;
+  /*background-position: 0 35%;*/
 }
 
 .layer-3 {
   background-image: url("./images/wave-bot.png");
+  background-size: 100% 40%;
+  background-position: 0 50%;
 }
-
-/*.layer-4 {
-  background-image: url("./images/wave-bottom.png");
-}*/
 
 .layer-4 {
   background-image: url("./images/wave-wash.png");
-  background-size: 100% 50%;
+  background-size: 100% 60%;
   background-position: bottom;
-}
-
-@media only screen and (max-width: 768px) {
-  
 }
