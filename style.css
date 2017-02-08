@@ -1,4 +1,5 @@
-/**{outline: 1px solid red}*/
+/* Debug Stuff */
+/*{outline: 1px solid red}*/
 
 body {
   padding: 0;
@@ -88,6 +89,14 @@ h1 {
   font-size: 1.6em;
   line-height: 150%;
 }
+.team-photo {
+  text-align: center;
+  margin-bottom: 16px; 
+}
+.team-photo img {
+  width: 100%;
+  max-width: 800px
+}
 .member-container {
   margin-bottom: 16px;
 }
@@ -111,11 +120,12 @@ h1 {
   width: 65%;
   float: left;
   padding: 0 0 0 16px;
-  font-size: .8em;
+  font-size: 18px;
+  /*outline: 1px solid red;*/
 }
 
 .social-media-icons {
-  margin: auto;
+  margin: 0 0 16px 0;
   text-align: center;
  
 }
@@ -132,21 +142,20 @@ h1 {
 }
 
 
-/*
- *********************
- *                   *
- * Parallax CSS Code *
- *                   *
- *********************
- */
+/****************
+ *              *
+ * Parallax CSS *
+ *              *
+ ****************/
 
 
 #splash, .layer {
-  min-height: 800px;
+  height: 100vh;
 }
 
 .layer-bg {
-  background-image: url("./images/wave-bg.jpg");
+  background-image: url("./images/wave_bg.jpg");
+   background-size: cover;
 }
 
 .layer-1 {
@@ -155,23 +164,21 @@ h1 {
   font-size: 8rem;
   color: #fff;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 40vh;
 }
 
 .layer-2 {
-  background-image: url("./images/wave-top.png");
-  background-size: 100% 40%;
-  /*background-position: 0 35%;*/
+
 }
 
 .layer-3 {
-  background-image: url("./images/wave-bot.png");
-  background-size: 100% 40%;
-  background-position: 0 50%;
+  background-image: url("./images/wave_bot.png");
+  background-size: 100% 30%;
+  background-position: 0 75%;
 }
 
 .layer-4 {
-  background-image: url("./images/wave-wash.png");
-  background-size: 100% 60%;
+  background-image: url("./images/wave_wash.png");
+  background-size: 100% 40vh;
   background-position: bottom;
 }
