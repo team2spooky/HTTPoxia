@@ -14,11 +14,8 @@ h1 {
   margin: 0;
 }
 
-#content {
+.content {
   background-color: #212121;
-}
-
-.container {
   padding: 0 4em 0 4em;
 }
 .row {
@@ -72,6 +69,7 @@ h1 {
   .overlay::after {
     opacity: 0;
     transition: opacity .4s;
+    /*display: none;*/
   }
   .overlay:hover:after {
     content: "";
@@ -82,7 +80,39 @@ h1 {
     background: #000;
     opacity: .5;
     /*box-shadow: 0px 0px 20px 20px rgba(0,0,0,.7)*/
+  }
+  .overlay:hover .hover-buttons {
+    opacity: 1;
+  }
+  .hover-buttons {
+    display: block!important;
+    position: absolute;
+    opacity: 0;
+    transition: all .3s;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 100;
+    padding: 0 20%;
+    top: calc(50% - calc(75px / 2));
+    width: 60%;
+  }
 
+  .linkedin-logo img, .twitter-logo img, .website-logo img {
+    /*outline: 1px solid pink;*/
+    height: 75px;
+  }
+  .twitter-logo {
+    position: absolute;
+    left: calc(20% - 75px);
+  }
+  .linkedin-logo {
+    position: absolute;
+    left: calc(50% - 75px);
+  }
+  .website-logo{
+    position: absolute;
+    left: calc(80% - 75px);
   }
   .member-buttons {
     display: none;
@@ -119,6 +149,28 @@ h1 {
   margin: 16px 0;
 }
 
+.flex-caption {
+  margin-top: .8em;
+  margin-left: auto;
+  margin-right: .6em;
+  padding: 8px 16px;
+  bottom: 0;
+  background: #212121;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+}
+
+.caption-tri {
+  position: absolute;
+  bottom: 0;
+  left: calc(100%);
+  width: 0;
+  height: 0;
+  border-bottom: 53px solid #212121;
+  border-right: 40px solid transparent;
+}
+
 .section-text, .member-container {
   font-size: 1.6em;
   line-height: 150%;
@@ -133,6 +185,7 @@ h1 {
 }
 .member-container {
   height: 100%;
+  margin-bottom: 30px;
 }
 .member-container::after { 
  content: " ";
@@ -166,19 +219,22 @@ h1 {
 .member-buttons li:hover {
   filter: invert(70%);
 }
-#linkedin-logo {
-  width: 30%;
-  max-height: 30px;
-  float: left;
-}
-#twitter-logo {
+.twitter-logo {
   width: 27%;
   float: left;
   margin-left: 8%;
 }
-#website-logo{
+.linkedin-logo {
+  width: 30%;
+  max-height: 30px;
+  float: left;
+}
+.website-logo{
   width: 27%;
   float: right;
+}
+.hover-buttons {
+  display: none;
 }
 .social-media-icons {
   margin: 0 0 16px 0;

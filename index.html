@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <title>Hypoxia</title>
   <link href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Averia+Serif+Libre:300i|Averia+Libre:300i" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery.js"></script>
   <script src="js/js.js"></script>
-
+  <script src="./js/jquery.flexslider-min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/flexslider.css" type="text/css" />
   
 </head>
 
@@ -19,148 +21,304 @@
     <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
     <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
   </div>
-  <div id='content'>
-    <div class='container'>
-      <div class='section first-section'>
-        <div class='row section-title'>
-          <div class='col-12'>
-            About
-          </div>
-        </div>
-        <div class='row section-text'>
-          <div class='col-12'>
-            Hypoxia is a VR, custom-hardware, survival-horror game being made by team2spooky at UCSC.
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class='row section-title'>
-          <div class='col-12'>
-            Story
-          </div>
-        </div>
-        <div class='row section-text'>
-          <div class='col-12'>
-            You're gonna get spooked. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui. Pellentesque vitae augue a urna rutrum bibendum. Pellentesque eleifend convallis rhoncus. Phasellus bibendum, metus eu tempus hendrerit, velit massa mattis velit, lobortis imperdiet orci arcu eget urna. Nunc finibus quis felis id lobortis. Suspendisse lectus urna, euismod gravida imperdiet et, condimentum non turpis. Aenean quis facilisis tortor. Nam tempor, est imperdiet placerat bibendum, neque dolor vulputate quam, ut consequat lectus nisl venenatis ipsum. Praesent pretium ac neque et semper. Aliquam sollicitudin pharetra arcu. Vestibulum porta sit amet libero eleifend pharetra. Vivamus pharetra ipsum a dignissim ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed id nibh vitae magna porta tristique mattis fermentum mauris.
-          </div>
-        </div>
-      </div>
-      <div class="section team">
-        <div class='row section-title'>
-          <div class='col-12'>
-            team2spooky
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-12 team-photo'>
-            <img src="./images/team2spooky.png"></img>
-          </div>
-        </div> 
-        <div class='row'>
-          <div class='col-6 member-container overlay'>
-              <div class='headshot'>
-                <img src="./images/headshot.png"></img>
-                <ul class='member-buttons'>
-                  <li id='linkedin-logo'><img src='./images/li_logo.png'></img></li>
-                  <li id='twitter-logo'><img src='./images/twitter_logo.png'></img></li>
-                  <li id='website-logo'><img src='./images/www_logo.png'></img></li>
-                </ul>
+  <div class='content'>
+    <div class='section first-section'>
+      <div class="row" id="slideshow">
+        <div class="col-12 flexslider">
+          <ul class="slides">
+            <li>
+              <a href="#slideshow"><img src="https://placeimg.com/1280/720/arch" /></a>
+              <div class="flex-caption">
+                <h1>Spooky Trailer</h1>
+                <div class="caption-tri"></div>
               </div>
-              <div class="member-bio">
-                <h1>Jim Whitehead</h1>
-                The most jelled man in the universe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </li>
+            <li>
+              <a href="#slideshow"><img src="https://placeimg.com/640/360/tech" /></a>
+              <div class="flex-caption"><h1>
+                <h1>Spooky Flashlight</h1>
+                <div class="caption-tri"></div>
               </div>
-          </div>
-          <div class='col-6 member-container overlay'>
-            <div class='headshot'>
-                <img src="./images/headshot.png"></img>
-                <ul class='member-buttons'>
-                  <li id='linkedin-logo'><img src='./images/li_logo.png'></img></li>
-                  <li id='twitter-logo'><img src='./images/twitter_logo.png'></img></li>
-                  <li id='website-logo'><img src='./images/www_logo.png'></img></li>
-                </ul>
+            </li>
+            <li>
+              <a href="#slideshow"><img src="https://placeimg.com/1280/720/nature" /></a>
+              <div class="flex-caption"><h1>
+                <h1>Spooky Placeholder</h1>
+                <div class="caption-tri"></div>
               </div>
-            <div class="member-bio">
-              <h1>Jim Whitehead</h1>
-              The most jelled man in the universe.
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-6 member-container overlay'>
-              <div class='headshot'>
-                <img src="./images/headshot.png"></img>
-                <ul class='member-buttons'>
-                  <li id='linkedin-logo'><img src='./images/li_logo.png'></img></li>
-                  <li id='twitter-logo'><img src='./images/twitter_logo.png'></img></li>
-                  <li id='website-logo'><img src='./images/www_logo.png'></img></li>
-                </ul>
-              </div>
-              <div class="member-bio">
-                <h1>Jim Whitehead</h1>
-                The most jelled man in the universe.
-              </div>
-          </div>
-          <div class='col-6 member-container overlay'>
-            <div class='headshot'>
-                <img src="./images/headshot.png"></img>
-                <ul class='member-buttons'>
-                  <li id='linkedin-logo'><img src='./images/li_logo.png'></img></li>
-                  <li id='twitter-logo'><img src='./images/twitter_logo.png'></img></li>
-                  <li id='website-logo'><img src='./images/www_logo.png'></img></li>
-                </ul>
-              </div>
-            <div class="member-bio">
-              <h1>Jim Whitehead</h1>
-              The most jelled man in the universe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-6 member-container overlay'>
-              <div class='headshot'>
-                <img src="./images/headshot.png"></img>
-                <ul class='member-buttons'>
-                  <li id='linkedin-logo'><img src='./images/li_logo.png'></img></li>
-                  <li id='twitter-logo'><img src='./images/twitter_logo.png'></img></li>
-                  <li id='website-logo'><img src='./images/www_logo.png'></img></li>
-                </ul>
-              </div>
-              <div class="member-bio">
-                <h1>Jim Whitehead</h1>
-                The most jelled man in the universe. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
-              </div>
-          </div>
-          <div class='col-6 member-container overlay'>
-            <div class='headshot'>
-                <img src="./images/headshot.png"></img>
-                <ul class='member-buttons'>
-                  <li id='linkedin-logo'><img src='./images/li_logo.png'></img></li>
-                  <li id='twitter-logo'><img src='./images/twitter_logo.png'></img></li>
-                  <li id='website-logo'><img src='./images/www_logo.png'></img></li>
-                </ul>
-              </div>
-            <div class="member-bio">
-              <h1>Jim Whitehead</h1>
-              The most jelled man in the universe.
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section">
-        <div class='row section-title'>
-          <div class='col-12'>
-            Social Media
-          </div>
+      <div class='row section-title'>
+        <div class='col-12'>
+          About
         </div>
-        <div class='row section-text social-media'>
-          <div class='col-12 social-media-icons'>
-            <a href="https://www.facebook.com/HypoxiaVR/?fref=ts"><img src="./images/fb_logo.png"></img></a> <a href="https://twitter.com/HypoxiaVR"><img src="./images/twitter_logo.png"></img></a>
-          </div>
+      </div>
+      <div class='row section-text'>
+        <div class='col-12'>
+          Hypoxia is a VR, custom-hardware, survival-horror game being made by team2spooky at UCSC.
         </div>
       </div>
     </div>
-  </div>
+    <div class="section">
+      <div class='row section-title'>
+        <div class='col-12'>
+          Story
+        </div>
+      </div>
+      <div class='row section-text'>
+        <div class='col-12'>
+          You're gonna get spooked. Pellentesque vitae augue a urna rutrum bibendum. Pellentesque eleifend convallis rhoncus. Phasellus bibendum, metus eu tempus hendrerit, velit massa mattis velit, lobortis imperdiet orci arcu eget urna. Nunc finibus quis felis id lobortis. Suspendisse lectus urna, euismod gravida imperdiet et, condimentum non turpis. Aenean quis facilisis tortor. Nam tempor, est imperdiet placerat bibendum, neque dolor vulputate quam, ut consequat lectus nisl venenatis ipsum. Praesent pretium ac neque et semper. Aliquam sollicitudin pharetra arcu. Vestibulum porta sit amet libero eleifend pharetra. Vivamus pharetra ipsum a dignissim ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed id nibh vitae magna porta tristique mattis fermentum mauris.
+        </div>
+      </div>
+    </div>
+    <div class="section team">
+      <div class='row section-title'>
+        <div class='col-12'>
+          team2spooky
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-12 team-photo'>
+          <img src="./images/team2spooky.png"></img>
+        </div>
+      </div> 
+      <div class='row'>
+        <div class='col-6 member-container overlay'>
+            <div class='overlay'>
+              <div class='headshot'>
+                <img src="./images/kevin.jpg"></img>
+                <ul class='member-buttons'>
+                  <li class='linkedin-logo'>
+                    <a target="_blank" href="http://www.linkedin.com/in/kevin-vylet"><img src='./images/li_logo.png'></img></a>
+                  </li>
+                  <li class='twitter-logo'>
+                    <a target="_blank" href="http://www.twitter.com/kevinvylet"><img src='./images/twitter_logo.png'></img></a>
+                  </li>
+                  <li class='website-logo'>
+                    <a target="_blank" href="http://people.ucsc.edu/~kevylet"><img src='./images/www_logo.png'></img></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class='hover-buttons'>
+              <li class='linkedin-logo'>
+                <a target="_blank" href="http://www.linkedin.com/in/kevin-vylet"><img src='./images/li_logo.png'></img></a>
+              </li>
+              <li class='twitter-logo'>
+                <a target="_blank" href="http://www.twitter.com/kevinvylet"><img src='./images/twitter_logo.png'></img></a>
+              </li>
+              <li class='website-logo'>
+                <a target="_blank" href="http://people.ucsc.edu/~kevylet"><img src='./images/www_logo.png'></img></a>
+              </li>
+            </ul>
+            <div class="member-bio">
+              <h1>Kevin Vylet</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </div>
+        </div>
+        <div class='col-6 member-container overlay'>
+            <div class='overlay'>
+              <div class='headshot'>
+                <img src="./images/kellie.jpg"></img>
+                <ul class='member-buttons'>
+                  <!-- <li class='twitter-logo'>
+                    <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+                  </li> -->
+                  <li class='linkedin-logo'>
+                    <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+                  </li>
+                 <!--  <li class='website-logo'>
+                    <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+            <ul class='hover-buttons'>
+              <!-- <li class='twitter-logo'>
+                <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+              </li> -->
+              <li class='linkedin-logo'>
+                <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+              </li>
+              <!-- <li class='website-logo'>
+                <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+              </li> -->
+            </ul>
+            <div class="member-bio">
+              <h1>Kellie Knight</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-6 member-container overlay'>
+            <div class='overlay'>
+              <div class='headshot'>
+                <img src="./images/quin.jpg"></img>
+                <ul class='member-buttons'>
+                  <!-- <li class='twitter-logo'>
+                    <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+                  </li> -->
+                  <li class='linkedin-logo'>
+                    <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+                  </li>
+                  <!-- <li class='website-logo'>
+                    <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+            <ul class='hover-buttons'>
+              <li class='linkedin-logo'>
+                <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+              </li>
+              <li class='twitter-logo'>
+                <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+              </li>
+              <li class='website-logo'>
+                <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+              </li>
+            </ul>
+            <div class="member-bio">
+              <h1>Quin Rogers</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </div>
+        </div>
+        <div class='col-6 member-container overlay'>
+            <div class='overlay'>
+              <div class='headshot'>
+                <img src="./images/____________.jpg"></img>
+                <ul class='member-buttons'>
+                  <li class='linkedin-logo'>
+                    <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+                  </li>
+                  <li class='twitter-logo'>
+                    <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+                  </li>
+                  <li class='website-logo'>
+                    <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class='hover-buttons'>
+              <li class='linkedin-logo'>
+                <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+              </li>
+              <li class='twitter-logo'>
+                <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+              </li>
+              <li class='website-logo'>
+                <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+              </li>
+            </ul>
+            <div class="member-bio">
+              <h1>____________</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-6 member-container overlay'>
+            <div class='overlay'>
+              <div class='headshot'>
+                <img src="./images/____________.jpg"></img>
+                <ul class='member-buttons'>
+                  <li class='linkedin-logo'>
+                    <a target="_blank" href="http://www.linkedin.com/in/____________-vylet"><img src='./images/li_logo.png'></img></a>
+                  </li>
+                  <li class='twitter-logo'>
+                    <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+                  </li>
+                  <li class='website-logo'>
+                    <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class='hover-buttons'>
+              <li class='linkedin-logo'>
+                <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+              </li>
+              <li class='twitter-logo'>
+                <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+              </li>
+              <li class='website-logo'>
+                <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+              </li>
+            </ul>
+            <div class="member-bio">
+              <h1>____________</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </div>
+        </div>
+        <div class='col-6 member-container overlay'>
+            <div class='overlay'>
+              <div class='headshot'>
+                <img src="./images/____________.jpg"></img>
+                <ul class='member-buttons'>
+                  <li class='linkedin-logo'>
+                    <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+                  </li>
+                  <li class='twitter-logo'>
+                    <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+                  </li>
+                  <li class='website-logo'>
+                    <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class='hover-buttons'>
+              <li class='linkedin-logo'>
+                <a target="_blank" href="http://www.linkedin.com/in/____________"><img src='./images/li_logo.png'></img></a>
+              </li>
+              <li class='twitter-logo'>
+                <a target="_blank" href="http://www.twitter.com/____________"><img src='./images/twitter_logo.png'></img></a>
+              </li>
+              <li class='website-logo'>
+                <a target="_blank" href="http://____________"><img src='./images/www_logo.png'></img></a>
+              </li>
+            </ul>
+            <div class="member-bio">
+              <h1>____________</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque at ultrices turpis. Fusce finibus facilisis orci ac auctor. Praesent eget posuere nisl, id pretium dui.
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class='row section-title'>
+        <div class='col-12'>
+          Social Media
+        </div>
+      </div>
+      <div class='row section-text social-media'>
+        <div class='col-12 social-media-icons'>
+          <a href="https://www.facebook.com/HypoxiaVR/?fref=ts"><img src="./images/fb_logo.png"></img></a> <a href="https://twitter.com/HypoxiaVR"><img src="./images/twitter_logo.png"></img></a>
+        </div>
+      </div>
+    </div>
+  </dvi>
 
 </body>
+<script type="text/javascript">
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+    
+    $(document).ready( function() {
+      $('.slides').each( function() {
+        var height = $(this).height();
+        var imageHeight = $(this).find('img').height();
+        var offset = (height - imageHeight) / 2;
+        $(this).find('img').css('margin-top', offset + 'px');
+        });
+    });
+  </script>
 </html>
